@@ -13,7 +13,7 @@ spec:
         releaseName: traefik
         valueFiles:
           - $values/application/traefik/traefik-values.yaml
-    - repoURL: https://github.com/Sushiio/argocd-proj
+    - repoURL: https://github.com/Sushiio/argocd-proj.git
       ref: values
   destination:
     server: 'https://kubernetes.default.svc'
