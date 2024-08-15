@@ -11,9 +11,8 @@ spec:
     targetRevision: 30.0.2
     helm:
       releaseName: traefik
-      values: |
-        configMap:
-          name: traefik-configmap.yaml
+      valueFiles:
+       - traefik-values.yaml
   destination:
     server: 'https://kubernetes.default.svc'
     namespace: traefik
