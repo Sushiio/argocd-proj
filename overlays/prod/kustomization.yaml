@@ -1,0 +1,7 @@
+resources:
+  - ../../base/traefik
+configMapGenerator:
+  - name: traefik-values
+    files:
+     - values-prod.yaml
+
