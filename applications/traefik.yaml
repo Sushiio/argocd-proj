@@ -6,9 +6,10 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: 'https://github.com/Sushiio/argocd-proj'
-    targetRevision: HEAD
-    path: overlays/prod/traefik
+    chart: traefik
+    repoURL: https://traefik.github.io/charts
+    helm:
+      releaseName: traefik
   destination:
     server: 'https://kubernetes.default.svc'
     namespace: traefik
