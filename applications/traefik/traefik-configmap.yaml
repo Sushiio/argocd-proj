@@ -6,7 +6,7 @@ metadata:
   labels:
     app: traefik
 data:
-  key: 
+  key: |
     # Default values for Traefik
     # This is a YAML-formatted file.
     # Declare variables to be passed into templates
