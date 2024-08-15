@@ -12,7 +12,7 @@ spec:
       helm:
         releaseName: traefik
         valueFiles:
-          - $values/application/traefik/traefik-values.yaml
+          - $values/applications/traefik/traefik-values.yaml
     - repoURL: https://github.com/Sushiio/argocd-proj.git
       ref: values
   destination:
